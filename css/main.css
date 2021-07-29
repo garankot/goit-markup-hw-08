@@ -62,8 +62,13 @@ body {
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -128,12 +133,44 @@ body {
 .main-title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .main-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.popup-btn {
+  /* font-family: "Roboto", sans-serif; */
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  letter-spacing: 0.06em;
+  color: var(--main-title-color);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+  transition: background-color 250ms var(--transition-timing-function);
+}
+
+.popup-btn:hover, .popup-btn:focus {
+  background: var(--btn-hover-color);
 }
 
 .main-suptitle {
@@ -480,8 +517,22 @@ body {
   color: var(--accent-color);
 }
 
-.features-section {
-  padding-top: 30px;
+.features-icon-bgr {
+  background-color: var(--filters-btn-bgr-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-text {
+  font-size: 14px;
+  line-height: 1.14;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--grey-text-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -502,24 +553,6 @@ body {
   .features-list-item {
     width: 270px;
   }
-}
-
-.features-icon-bgr {
-  background-color: var(--filters-btn-bgr-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 120px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.features-text {
-  font-size: 14px;
-  line-height: 1.14;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--grey-text-color);
 }
 
 .about-list {

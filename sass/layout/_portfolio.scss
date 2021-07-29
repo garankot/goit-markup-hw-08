@@ -72,9 +72,10 @@
     padding: 63px 24px;
     transform: translateY(100%);
     transition: transform 250ms linear;
+
+    .projects-link:hover &,
+    .projects-link:focus & {
+    transform: translateY(0%);
+    }
   }
   
-  .projects-link:hover &,
-  .projects-link:focus & {
-    transform: translateY(0%);
-  }

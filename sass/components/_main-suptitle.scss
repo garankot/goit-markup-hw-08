@@ -1,8 +1,17 @@
-.main-suptitle {    
+.main-suptitle{
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--suptitle-color);
+  margin-bottom: 30px;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .main-suptitle {    
     font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--suptitle-color);
+    line-height: 1.17;    
     margin-bottom: 50px;
   }
+}

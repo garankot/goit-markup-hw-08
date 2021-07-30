@@ -21,15 +21,24 @@
   }
   
   .footer-div-all {
-    display: flex;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    text-align: center;
   }
   
   .address-div {
-    margin-right: 70px;
+    margin-bottom: 60px;
   }
-  
+
+  .footer-social{
+    margin-bottom: 60px;
+  }
+
   .address-list__item {
     margin-bottom: 10px;
+    
   }
   
   .address-list__link-maps {
@@ -52,9 +61,7 @@
     color: var(--accent-color);
     }
   }
-  
-  
-  
+
   .footer-social-title {
     margin-bottom: 20px;
     padding-top: 12px;
@@ -89,15 +96,6 @@
     height: 22px;
   }
   
-  .footer-form {
-    display: flex;
-  }
-  .subscribe-mail {
-    display: inline-block;
-    align-items: center;
-    margin-left: auto;
-  }
-  
   .subscribe-mail-title {
     display: block;
     font-weight: 700;
@@ -111,7 +109,7 @@
   }
   
   .footer-form__input-mail {
-    width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -139,7 +137,6 @@
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin-left: 12px;
     border: none;
     color: var(--main-title-color);
     font-weight: 700;
@@ -147,6 +144,7 @@
     line-height: 1.8;
     letter-spacing: 0.06em;
     cursor: pointer;
+    margin: 20px auto 0px;
    
     & :hover{
       background-color: var(--btn-hover-color);
@@ -159,3 +157,60 @@
     height: 24px;
     margin-left: 10px;
   }
+
+@media screen and (min-width: 768px) {
+  .footer-div-all{
+    display: flex;
+    flex-wrap: wrap;
+    place-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-div-all{
+    text-align: unset;
+    place-content: space-between;
+  }
+  .footer-form {
+    display: flex;
+  }
+  .subscribe-btn{
+    margin: 0px 0px 0px 12px;
+  }
+
+  .footer-form__input-mail{
+    width: 358px;
+  }
+  .footer-social,
+  .address-div{
+    margin: unset;
+  }
+  
+  // .address-div {
+  //     margin-right: 70px;
+  //   }
+
+  // .subscribe-mail {
+  //   display: inline-block;
+  //   align-items: center;
+  //   margin-left: auto;
+  // }
+}
+  // .logo-footer{
+//   text-align: center;
+// }
+
+  // .address-div {
+  //   margin-right: 70px;
+  // }
+
+  // .footer-form {
+  //   display: flex;
+  // }
+
+
+  // .subscribe-mail {
+  //   display: inline-block;
+  //   align-items: center;
+  //   margin-left: auto;
+  // }

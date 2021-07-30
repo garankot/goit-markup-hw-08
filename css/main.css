@@ -651,6 +651,7 @@ body {
 
 .our-team-section {
   background-color: var(--filters-btn-bgr-color);
+  margin: 0 auto;
 }
 
 .our-team-suptitle {
@@ -707,9 +708,6 @@ body {
 @media screen and (min-width: 1200px) {
   .members {
     padding: 30px 0;
-  }
-  .our-team-section {
-    max-width: 1600px;
   }
   .our-team-list-item {
     width: unset;
@@ -790,11 +788,15 @@ body {
 }
 
 .footer-div-all {
-  display: flex;
+  text-align: center;
 }
 
 .address-div {
-  margin-right: 70px;
+  margin-bottom: 60px;
+}
+
+.footer-social {
+  margin-bottom: 60px;
 }
 
 .address-list__item {
@@ -857,16 +859,6 @@ body {
   height: 22px;
 }
 
-.footer-form {
-  display: flex;
-}
-
-.subscribe-mail {
-  display: inline-block;
-  align-items: center;
-  margin-left: auto;
-}
-
 .subscribe-mail-title {
   display: block;
   font-weight: 700;
@@ -880,7 +872,7 @@ body {
 }
 
 .footer-form__input-mail {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -908,7 +900,6 @@ body {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-left: 12px;
   border: none;
   color: var(--main-title-color);
   font-weight: 700;
@@ -916,6 +907,7 @@ body {
   line-height: 1.8;
   letter-spacing: 0.06em;
   cursor: pointer;
+  margin: 20px auto 0px;
 }
 
 .subscribe-btn :hover {
@@ -927,6 +919,34 @@ body {
   width: 24px;
   height: 24px;
   margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-div-all {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-div-all {
+    text-align: unset;
+    place-content: space-between;
+  }
+  .footer-form {
+    display: flex;
+  }
+  .subscribe-btn {
+    margin: 0px 0px 0px 12px;
+  }
+  .footer-form__input-mail {
+    width: 358px;
+  }
+  .footer-social,
+  .address-div {
+    margin: unset;
+  }
 }
 
 .filters-list {

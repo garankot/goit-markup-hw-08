@@ -28,7 +28,6 @@
   border-bottom: 1px solid #ececec;
 }
 
-
 @media screen and (min-width: 768px) {
   .burger-btn {
     display: none;
@@ -94,22 +93,22 @@
     }
   }
 
-@media screen and (min-width: 1200px) {
-  .logo_header {
-    margin-right: 92px;
-  }
-  .contact-menu {
-    display: flex;
+  @media screen and (min-width: 1200px) {
+    .logo_header {
+      margin-right: 92px;
+    }
+    .contact-menu {
+      display: flex;
 
-    & .contact-menu__item:not(:last-child) {
-      margin-right: 50px;
+      & .contact-menu__item:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+    .contact-menu__mail-link,
+    .contact-menu__tel-link {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      margin: 0;
     }
   }
-  .contact-menu__mail-link,
-  .contact-menu__tel-link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin: 0;
-  }
-}
 }

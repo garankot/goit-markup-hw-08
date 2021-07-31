@@ -354,11 +354,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--grey-text-color);
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
@@ -400,12 +401,20 @@ body {
   background: var(--btn-hover-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form-checkbox-label {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: unset;
+  }
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 582px;
+  width: 450px;
+  height: 609px;
   background-color: var(--main-title-color);
   transform: translate(-50%, -50%);
   padding: 40px;
@@ -434,6 +443,13 @@ body {
 .close-btn-icon {
   width: 11px;
   height: 11px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 582px;
+  }
 }
 
 .backdrop {

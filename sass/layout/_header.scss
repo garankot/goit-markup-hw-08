@@ -72,8 +72,8 @@
     margin-left: auto;
   }
 
-  .contact-menu__mail-link {
-    margin-bottom: 10px;
+  .contact-menu__contact-icon{
+    margin-right: 8px;
   }
 
   .contact-menu__mail-link,
@@ -90,6 +90,9 @@
     &:hover,
     &:focus {
       color: var(--accent-color);
+      fill: var(--accent-color);
+      transition: color 250ms var(--transition-timing-function),
+      fill 250ms var(--transition-timing-function)
     }
   }
 

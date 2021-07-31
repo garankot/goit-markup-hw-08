@@ -30,9 +30,9 @@
 
   &:hover,
   &:focus {
-  fill: var(--accent-color);
-  transition: fill 250ms var(--transition-timing-function);
-}
+    fill: var(--accent-color);
+    transition: fill 250ms var(--transition-timing-function);
+  }
 }
 
 .mobile-menu__close-icon {
@@ -44,7 +44,7 @@
   position: relative;
 }
 
-.mobile-menu__nav{
+.mobile-menu__nav {
   padding-left: 40px;
   padding-top: 48px;
   margin-bottom: 302px;
@@ -56,7 +56,7 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--suptitle-color);
- 
+
   &:focus {
     color: var(--accent-color);
   }
@@ -69,49 +69,46 @@
   }
 }
 
-.contact-mobile-menu{
-    padding-left: 40px;
-    margin-bottom: 64px;
+.contact-mobile-menu {
+  padding-left: 40px;
+  margin-bottom: 64px;
 }
 
-.contact-mobile-menu__tel-link{
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
+.contact-mobile-menu__tel-link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
-.contact-mobile-menu__mail-link{
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.02em;
-    color: var(--grey-text-color);
+.contact-mobile-menu__mail-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--grey-text-color);
 }
 
 .mobile-social-list {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.mobile-social-list__link{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
+.mobile-social-list__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
-// .mobile-social-list__item{
-//     display: inline;
-// }
-.mobile-social-list__item:not(:last-child):after {   
-        content: "";
-        width: 22px;
-        height: 0px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        transform: rotate(90deg);
-        margin-left: 10px;
-        margin-right: 10px;
+.mobile-social-list__item:not(:last-child):after {
+  content: "";
+  width: 22px;
+  height: 0px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-left: 10px;
+  margin-right: 10px;
 }

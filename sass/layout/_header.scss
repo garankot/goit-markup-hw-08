@@ -28,6 +28,52 @@
   border-bottom: 1px solid #ececec;
 }
 
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-title-color);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms var(--transition-timing-function),
+    visibility 250ms var(--transition-timing-function);
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  line-height: 0;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    transition: fill 250ms var(--transition-timing-function);
+  }
+}
+
+.mobile-menu__close-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu__container {
+  position: relative;
+}
+
 @media screen and (min-width: 768px) {
   .burger-btn {
     display: none;

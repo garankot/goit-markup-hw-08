@@ -252,7 +252,9 @@ body {
   background: var(--filters-btn-bgr-color);
   border-radius: 4px;
   padding: 6px 22px;
+  height: 38px;
   transition: color 250ms var(--transition-timing-function);
+  cursor: pointer;
 }
 
 .filters-btn:hover, .filters-btn:focus {
@@ -1021,33 +1023,21 @@ body {
 
 .filters-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 34px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-.filters-list-item {
-  display: block;
+.filters-list-item:nth-child(-n + 5) {
+  margin-bottom: 15px;
 }
 
 .filters-list-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.projects-list-item {
-  margin-left: 30px;
-  margin-top: 30px;
-  background: var(--main-title-color);
-}
-
-.projects-list-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.projects-list-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .projects-suptitle {
@@ -1067,11 +1057,7 @@ body {
 .project-list-item-div {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
-}
-
-.projects-link {
-  display: block;
-  position: relative;
+  flex-grow: 1;
 }
 
 .projects-img-wrapper {
@@ -1099,5 +1085,47 @@ body {
 .projects-link:hover .overlay,
 .projects-link:focus .overlay {
   transform: translateY(0%);
+}
+
+@media screen and (min-width: 768px) {
+  .filters-list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .filters-list-item:nth-child(-n + 5) {
+    margin-bottom: unset;
+  }
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .projects-list-item {
+    width: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+    background: var(--main-title-color);
+  }
+  .projects-list-item:not(:last-child) {
+    margin-bottom: unset;
+  }
+  .projects-list-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  .projects-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters-list {
+    margin-bottom: 50px;
+  }
+  .projects-list-item {
+    width: unset;
+  }
 }
 /*# sourceMappingURL=main.css.map */

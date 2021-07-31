@@ -10,7 +10,9 @@
     background: var(--filters-btn-bgr-color);
     border-radius: 4px;
     padding: 6px 22px;
+    height: 38px;
     transition: color 250ms var(--transition-timing-function);
+    cursor: pointer;
 
     &:hover,
     &:focus {

@@ -653,6 +653,9 @@ body {
   .contact-menu__contact-icon {
     margin-right: 8px;
   }
+  .contact-menu__mail-link {
+    margin-bottom: 10px;
+  }
   .contact-menu__mail-link,
   .contact-menu__tel-link {
     display: flex;

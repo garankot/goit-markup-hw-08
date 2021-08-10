@@ -10,11 +10,11 @@
   background-color: transparent;
   border: none;
   padding: 0px;
+  margin: 10px 0px;
 
   &__icon {
     width: 24px;
     height: 16px;
-    margin: 16px 0px;
     &:hover {
       fill: var(--accent-color);
     }
@@ -72,6 +72,11 @@
 
 .mobile-menu__container {
   position: relative;
+}
+
+.burger-btn{
+  width: 40px;
+  height: 40px;
 }
 
 @media screen and (min-width: 768px) {

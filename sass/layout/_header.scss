@@ -83,10 +83,21 @@
     align-items: center;
     justify-content: space-between;
   }
-  .logo_header {
-    margin-right: 88px;
-  }
-  .menu {
+  
+.logo,
+.logo_color{
+  font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+}
+
+.logo_header {
+  margin-right: 88px;
+  font-size: 26px;
+line-height: 1.2;   
+}
+
+.menu {
     display: flex;
     align-items: center;
 

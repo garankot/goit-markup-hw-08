@@ -546,6 +546,7 @@ body {
 .burger-btn__icon {
   width: 24px;
   height: 16px;
+  margin: 16px 0px;
 }
 
 .burger-btn__icon:hover {
